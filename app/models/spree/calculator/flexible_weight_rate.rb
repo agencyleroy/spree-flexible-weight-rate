@@ -1,5 +1,6 @@
 module Spree
   class Calculator::FlexibleWeightRate < Calculator
+    raise "zomg"
     preference :initial,      :decimal, :default => 0.0
     preference :cost_per_weight, :decimal, :default => 0.0
     preference :weight, :decimal, :default => 0.0
