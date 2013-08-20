@@ -1,6 +1,5 @@
 module Spree
   class Calculator::FlexibleWeightRate < Calculator
-    raise "zomg"
     preference :initial,      :decimal, :default => 0.0
     preference :cost_per_weight, :decimal, :default => 0.0
     preference :weight, :decimal, :default => 0.0
@@ -9,7 +8,7 @@ module Spree
     attr_accessible :preferred_initial, :preferred_cost_per_weight, :preferred_weight, :preferred_currency
 
     def self.description
-      "Flexible Weight Rate"
+      "Tjockis Rate"
     end
 
     def self.available?(object)
